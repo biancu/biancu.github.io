@@ -35,5 +35,4 @@ Everything is in `index.html`:
 
 - All employment and grant entries use **years only**; no funding amounts are shown.
 - The publication list is summarised — ORCID is linked as the authoritative source.
-- The contact email in the page is a placeholder based on the standard
-  `firstname.lastname@abo.fi` convention — **verify or replace it** before publishing.
+- Contact email on the page: `iancu.v.bogdan@gmail.com`.

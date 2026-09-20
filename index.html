@@ -105,6 +105,28 @@
 
   /* ---------- Hero ---------- */
   .hero{padding-block:clamp(2.75rem,7vw,4.75rem) clamp(1.5rem,4vw,2.5rem)}
+  .hero-grid{
+    display:grid;grid-template-columns:minmax(0,1fr) clamp(210px,25vw,280px);
+    gap:clamp(1.75rem,5vw,3.5rem);align-items:center;
+  }
+  .hero-portrait{margin:0;position:relative;isolation:isolate}
+  .hero-portrait::before{
+    content:"";position:absolute;inset:0;z-index:-1;border-radius:20px;
+    transform:translate(15px,15px);
+    background:var(--accent-soft);
+    border:1px solid color-mix(in srgb,var(--accent) 20%,transparent);
+  }
+  .hero-portrait img{
+    display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;
+    border-radius:16px;background:var(--surface-2);
+    box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 22%,transparent),
+               0 22px 44px -22px rgba(15,58,82,.55);
+  }
+  @media (max-width:720px){
+    .hero-grid{grid-template-columns:1fr;gap:1.6rem;justify-items:start}
+    .hero-portrait{order:-1;width:clamp(136px,42vw,184px)}
+    .hero-portrait::before{transform:translate(11px,11px)}
+  }
   .eyebrow{
     font-family:var(--font-mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;
     color:var(--accent-ink);margin:0 0 1rem;
@@ -250,20 +272,28 @@
 </nav>
 
 <header class="hero wrap" id="top">
-  <p class="eyebrow">Maritime Technology Group · Novia University of Applied Sciences</p>
-  <h1>Bogdan Iancu</h1>
-  <p class="role">Project Leader in Maritime AI Solutions &amp; Docent in Computer Science</p>
-  <p class="lede">
-    Project Leader in Maritime AI Solutions in the Maritime Technology Group at Novia
-    University of Applied Sciences, bringing extensive research experience in applied
-    artificial intelligence, digitalization, and computational modelling.
-  </p>
-  <div class="cred">
-    <span><svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Turku, Finland</span>
-    <span class="dot"></span>
-    <a href="https://orcid.org/0000-0001-8801-7250" rel="noopener">ORCID 0000-0001-8801-7250</a>
-    <span class="dot"></span>
-    <a href="mailto:iancu.v.bogdan@gmail.com">iancu.v.bogdan@gmail.com</a>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Maritime Technology Group · Novia University of Applied Sciences</p>
+      <h1>Bogdan Iancu</h1>
+      <p class="role">Project Leader in Maritime AI Solutions &amp; Docent in Computer Science</p>
+      <p class="lede">
+        Project Leader in Maritime AI Solutions in the Maritime Technology Group at Novia
+        University of Applied Sciences, bringing extensive research experience in applied
+        artificial intelligence, digitalization, and computational modelling.
+      </p>
+      <div class="cred">
+        <span><svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Turku, Finland</span>
+        <span class="dot"></span>
+        <a href="https://orcid.org/0000-0001-8801-7250" rel="noopener">ORCID 0000-0001-8801-7250</a>
+        <span class="dot"></span>
+        <a href="mailto:iancu.v.bogdan@gmail.com">iancu.v.bogdan@gmail.com</a>
+      </div>
+    </div>
+    <figure class="hero-portrait">
+      <img src="assets/portrait.jpg" width="560" height="700"
+           alt="Portrait of Bogdan Iancu">
+    </figure>
   </div>
 </header>
 

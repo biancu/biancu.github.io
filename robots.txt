@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biancu.github.io/sitemap.xml

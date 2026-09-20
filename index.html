@@ -220,12 +220,13 @@
   tbody tr:hover td{background:var(--surface-2)}
 
   /* ---------- Supervision ---------- */
-  .sup-grid{display:grid;grid-template-columns:1fr;gap:1.6rem}
-  @media (min-width:720px){.sup-grid{grid-template-columns:1fr 1fr}}
+  .sup-stack{display:grid;gap:1.9rem}
   .sup-col h3{font-size:1.05rem;color:var(--ink);margin-bottom:.4rem;display:flex;align-items:baseline;gap:.5rem}
   .sup-col h3 .count{font-family:var(--font-mono);font-size:.72rem;color:var(--muted);font-weight:400}
   .sup-list{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
-  .sup-list li{display:grid;grid-template-columns:auto 1fr;gap:.75rem;padding-top:.7rem;border-top:1px solid var(--line)}
+  .sup-list--cols{gap:.55rem 2rem}
+  @media (min-width:680px){.sup-list--cols{grid-template-columns:1fr 1fr}}
+  .sup-list li{display:grid;grid-template-columns:5.2rem 1fr;gap:.75rem;padding-top:.7rem;border-top:1px solid var(--line)}
   .sup-list li:first-child{border-top:0;padding-top:0}
   .sup-list .st{font-family:var(--font-mono);font-size:.72rem;color:var(--accent-ink);white-space:nowrap;padding-top:.12rem}
   .sup-list .sd .name{color:var(--ink);font-size:.95rem}
@@ -532,25 +533,38 @@
 <section id="supervision" class="wrap">
   <div class="sec-head"><span class="sec-num">08</span><h2 class="sec-title">Supervision</h2></div>
   <p class="prose" style="margin-bottom:1.8rem">
-    Supervision spans an ongoing PhD, eleven master's theses (six graduated), and three
-    bachelor's theses, plus five research internships at the Department of Information
-    Technologies, Åbo Akademi University.
+    Supervision spans an ongoing doctoral thesis, ten master's theses (eight graduated), and
+    three bachelor's theses (two graduated), together with five research internships at the
+    Department of Information Technologies, Åbo Akademi University.
   </p>
-  <div class="sup-grid">
+  <div class="sup-stack">
     <div class="sup-col">
-      <h3>Doctoral <span class="count">co-supervisor · ongoing</span></h3>
+      <h3>Doctoral <span class="count">co-supervisor</span></h3>
       <ul class="sup-list">
-        <li><span class="st">2024—</span><div class="sd"><div class="name">Prashani Jayasingha</div><div class="topic">Socially assistive robotics for physical rehabilitation of stroke patients</div></div></li>
+        <li><span class="st">2024 · now</span><div class="sd"><div class="name">Prashani Jayasingha</div><div class="topic">Socially assistive robotic system for physical rehabilitation of stroke patients</div></div></li>
       </ul>
     </div>
     <div class="sup-col">
-      <h3>Master's <span class="count">selected</span></h3>
-      <ul class="sup-list">
-        <li><span class="st">2025 ✓</span><div class="sd"><div class="name">Parisa Poorhasani</div><div class="topic">Explainable ML for stage-specific cancer survival prediction</div></div></li>
-        <li><span class="st">2025 ✓</span><div class="sd"><div class="name">Nethmi Fosekange</div><div class="topic">Deep-learning brain-tumour segmentation</div></div></li>
-        <li><span class="st">2022 ✓</span><div class="sd"><div class="name">Jesper Winsten</div><div class="topic">Deep learning for maritime ship detection</div></div></li>
-        <li><span class="st">2020 ✓</span><div class="sd"><div class="name">Luca Zelioli</div><div class="topic">Environmental damage assessment from satellite imagery</div></div></li>
-        <li><span class="st">2024—</span><div class="sd"><div class="name">Alexander Winberg</div><div class="topic">LLM-enabled teaching-assistant chatbot for programming courses</div></div></li>
+      <h3>Master's <span class="count">10 theses</span></h3>
+      <ul class="sup-list sup-list--cols">
+        <li><span class="st">2026 ✓</span><div class="sd"><div class="name">Uthpala Ekanayake Wasala Mudiyanselage</div><div class="topic">A Human-centered Agentic System for Socially Assisted Rehabilitation</div></div></li>
+        <li><span class="st">2026 ✓</span><div class="sd"><div class="name">Nicolas Ragnell</div><div class="topic">Adversarial Attacks on Object Detectors: An Empirical Study</div></div></li>
+        <li><span class="st">2025 ✓</span><div class="sd"><div class="name">Parisa Poorhasani</div><div class="topic">Explainable Machine Learning for Stage-Specific Cancer Survival Prediction</div></div></li>
+        <li><span class="st">2025 ✓</span><div class="sd"><div class="name">Nethmi Fosekange</div><div class="topic">Deep Learning-Based Brain Tumour Segmentation</div></div></li>
+        <li><span class="st">2023 ✓</span><div class="sd"><div class="name">Lucas Fransman</div><div class="topic">Co-simulation models for ship power management systems</div></div></li>
+        <li><span class="st">2022 ✓</span><div class="sd"><div class="name">Jesper Winsten</div><div class="topic">Deep learning approaches for maritime ship detection from inshore and offshore imagery</div></div></li>
+        <li><span class="st">2020 ✓</span><div class="sd"><div class="name">Luca Zelioli</div><div class="topic">Environmental damage assessment based on satellite imagery using machine learning</div></div></li>
+        <li><span class="st">2015 ✓</span><div class="sd"><div class="name">Tolou Shadbahr</div><div class="topic">Quantitative model refinement of the ErbB signalling pathway</div></div></li>
+        <li><span class="st">2025 · now</span><div class="sd"><div class="name">Erik Westerstråhle</div><div class="topic">AI-enabled 3D reconstruction of architectural plans of buildings</div></div></li>
+        <li><span class="st">2024 · now</span><div class="sd"><div class="name">Viktor Sjöström</div><div class="topic">Predicting Parking Occupancy Using Time Series Data</div></div></li>
+      </ul>
+    </div>
+    <div class="sup-col">
+      <h3>Bachelor's <span class="count">3 theses</span></h3>
+      <ul class="sup-list sup-list--cols">
+        <li><span class="st">2025 ✓</span><div class="sd"><div class="name">Johannes Lindman</div><div class="topic">Utilizing Unmanned Aerial Vehicles in Logistics</div></div></li>
+        <li><span class="st">2025 ✓</span><div class="sd"><div class="name">Liam Rothwell</div><div class="topic">Bridging Retrieval and Generation: Advancing Retrieval-Augmented Generation</div></div></li>
+        <li><span class="st">2024 · now</span><div class="sd"><div class="name">Olivia Oukka</div><div class="topic">Harnessing Artificial Intelligence for Advancements in Drug Development</div></div></li>
       </ul>
     </div>
   </div>
@@ -562,9 +576,9 @@
     <div class="block">
       <h3>Positions of trust</h3>
       <ul>
-        <li><b>Selection Committee member</b>, Erasmus Mundus EDISS (2024–present) — application review, selection and scholarship decisions.</li>
-        <li><b>Teacher tutor</b>, EDISS master's programme (2024–present).</li>
-        <li><b>Mentor</b>, CHARM-EU Master in Global Challenges for Sustainability (2025–present).</li>
+        <li><b>Selection Committee member</b>, Erasmus Mundus EDISS (2024–2025) — application review, selection and scholarship decisions.</li>
+        <li><b>Teacher tutor</b>, EDISS master's programme (2024–2025).</li>
+        <li><b>Mentor</b>, CHARM-EU Master in Global Challenges for Sustainability (2025–2026).</li>
       </ul>
     </div>
     <div class="block">
@@ -580,15 +594,14 @@
       <ul>
         <li>Referee for journals including <b>Remote Sensing</b>, <b>Sensors</b>, <b>Journal of Marine Science and Engineering</b>, <b>Electronics</b>, <b>Symmetry</b>, and <b>Theoretical Computer Science</b>.</li>
         <li>Referee for conferences including CMSB and ICFEM.</li>
-        <li>Technical Program Committee member, FRUCT conferences.</li>
       </ul>
     </div>
     <div class="block">
       <h3>Scientific &amp; societal impact</h3>
       <ul>
-        <li><b>Stanford WiDS Ambassador</b> — Women in Data Science (2024–present).</li>
         <li>Member, <b>Finnish Artificial Intelligence Society</b> (2022–present).</li>
-        <li>Member of <b>ReFund</b>, a departmental strategic team on funding for early-career researchers (2021–present).</li>
+        <li><b>Stanford WiDS Ambassador</b> — Women in Data Science (2024–2026).</li>
+        <li>Former member of <b>ReFund</b>, a departmental strategic team on funding for early-career researchers (2021–2022).</li>
         <li>Former member, <b>Female IT Profile</b> team promoting equality in IT (2021–2022).</li>
       </ul>
     </div>

@@ -35,4 +35,4 @@ Everything is in `index.html`:
 
 - All employment and grant entries use **years only**; no funding amounts are shown.
 - The publication list is summarised — ORCID is linked as the authoritative source.
-- Contact email on the page: `iancu.v.bogdan@gmail.com`.
+- Contact email on the page: `bogdan.iancu@novia.fi`.

@@ -241,9 +241,31 @@
   .sup-list .sd .name{color:var(--ink);font-size:.95rem}
   .sup-list .sd .topic{color:var(--muted);font-size:.85rem;margin-top:.1rem}
 
+  /* ---------- Publications ---------- */
+  .pub-group{margin-bottom:1.9rem}
+  .pub-group:last-of-type{margin-bottom:0}
+  .pub-group > h3{
+    font-family:var(--font-mono);font-weight:500;font-size:.76rem;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--accent-ink);margin-bottom:.9rem;
+  }
+  .pub-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+  .pub-list li{
+    display:grid;grid-template-columns:3.4rem 1fr;gap:1rem;align-items:baseline;
+    padding-block:.8rem;border-top:1px solid var(--line);
+  }
+  .pub-list li:first-child{border-top:0}
+  .pub-list .py{font-family:var(--font-mono);font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+  .pub-list .pc{color:var(--ink-soft);font-size:.95rem;line-height:1.5}
+  .pub-list .pc b{color:var(--ink);font-weight:600}
+  .pub-list .pc em{color:var(--ink)}
+  @media (max-width:560px){
+    .pub-list li{grid-template-columns:1fr;gap:.2rem}
+  }
+
   /* ---------- Two-col info ---------- */
   .cols{display:grid;grid-template-columns:1fr;gap:1.8rem}
   @media (min-width:720px){.cols{grid-template-columns:1fr 1fr}}
+  .col-stack{display:grid;gap:1.8rem;align-content:start}
   .block h3{font-family:var(--font-mono);font-weight:500;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:.75rem}
   .block ul{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
   .block li{color:var(--ink-soft);font-size:.94rem;padding-left:1rem;position:relative}
@@ -288,7 +310,8 @@
         <span>Docent (Adj. Prof.) in Computer Science</span>
       </p>
       <p class="lede">
-        Project Leader in Maritime AI Solutions in the Maritime Technology Group at Novia
+        <a href="https://www.novia.fi/en/rdi/research-area/maritime-technology/our-experts/bogdan-iancu" rel="noopener">Project Leader in Maritime AI Solutions</a> in the
+        <a href="https://www.novia.fi/en/rdi/research-area/maritime-technology" rel="noopener">Maritime Technology Group</a> at Novia
         University of Applied Sciences, bringing extensive research experience in applied
         artificial intelligence, digitalization, and computational modelling.
       </p>
@@ -314,8 +337,8 @@
   <div class="prose">
     <p>
       Bogdan earned his DI (diploma engineer / <em>diplomi-insinööri</em>) degree in computer engineering
-      at the National University of Science and Technology POLITEHNICA Bucharest, and holds a
-      PhD in computer science from Åbo Akademi University, where his doctoral research focused
+      at the <a href="https://upb.ro/en/" rel="noopener">National University of Science and Technology POLITEHNICA Bucharest</a>, and holds a
+      PhD in computer science from <a href="https://www.abo.fi/en/" rel="noopener">Åbo Akademi University</a>, where his doctoral research focused
       on formal methods for quantitative model refinement.
     </p>
     <p>
@@ -327,7 +350,7 @@
       topic of <em>Computational Modeling and Industrial Applications</em>.
     </p>
     <p>
-      In 2026, Bogdan joined Novia University of Applied Sciences as a Project Leader, where he
+      In 2026, Bogdan joined <a href="https://www.novia.fi/en" rel="noopener">Novia University of Applied Sciences</a> as a Project Leader, where he
       leads projects on maritime AI solutions in collaboration with the Finnish shipbuilding
       industry.
     </p>
@@ -361,7 +384,7 @@
       <div class="when">2026 — present</div>
       <div class="what">
         <h3>Project Leader in Maritime AI Solutions</h3>
-        <p class="org">Novia University of Applied Sciences — Maritime Technology Group</p>
+        <p class="org"><a href="https://www.novia.fi/en" rel="noopener">Novia University of Applied Sciences</a> — <a href="https://www.novia.fi/en/rdi/research-area/maritime-technology" rel="noopener">Maritime Technology Group</a></p>
         <p class="place">Finland</p>
         <p class="note">Leading projects on maritime AI solutions in collaboration with the Finnish shipbuilding industry.</p>
       </div>
@@ -370,7 +393,7 @@
       <div class="when">2024 — 2026</div>
       <div class="what">
         <h3>University Lecturer in Computer Science and Engineering</h3>
-        <p class="org">Åbo Akademi University — Department of Information Technologies</p>
+        <p class="org"><a href="https://www.abo.fi/en/" rel="noopener">Åbo Akademi University</a> — Department of Information Technologies</p>
         <p class="place">Turku, Finland</p>
         <p class="note">Taught data science, research methods, graph algorithms, operating systems and IoT architecture; academic coordinator for the Erasmus Mundus EDISS master's programme.</p>
       </div>
@@ -379,7 +402,7 @@
       <div class="when">2019 — 2023</div>
       <div class="what">
         <h3>Project Researcher &amp; Part-time Lecturer</h3>
-        <p class="org">Åbo Akademi University — Department of Information Technologies</p>
+        <p class="org"><a href="https://www.abo.fi/en/" rel="noopener">Åbo Akademi University</a> — Department of Information Technologies</p>
         <p class="place">Turku, Finland</p>
         <p class="note">Research and coordination across industry-facing projects on maritime data, decarbonised transport, space technology, and industrial AI (TEHOTEKO, DECATRIP, Sea4Value, Kvarken Space Eco, Reboot IoT Factory).</p>
       </div>
@@ -388,7 +411,7 @@
       <div class="when">2022</div>
       <div class="what">
         <h3>Visiting Researcher</h3>
-        <p class="org">Norwegian University of Science and Technology (NTNU)</p>
+        <p class="org"><a href="https://www.ntnu.edu/" rel="noopener">Norwegian University of Science and Technology (NTNU)</a></p>
         <p class="place">Trondheim, Norway</p>
         <p class="note">Underwater datasets for object detection by mobile robotic explorers, and an adversarial-attack pipeline for above-water object detection in autonomous navigation.</p>
       </div>
@@ -397,7 +420,7 @@
       <div class="when">2017 — 2018</div>
       <div class="what">
         <h3>Bioinformatician / Postdoctoral Researcher</h3>
-        <p class="org">Genevia Technologies Oy</p>
+        <p class="org"><a href="https://geneviatechnologies.com/" rel="noopener">Genevia Technologies Oy</a></p>
         <p class="place">Tampere, Finland</p>
         <p class="note">RNA-seq and microarray gene-expression analysis, building an RNA-seq analysis pipeline and delivering results to industry clients.</p>
       </div>
@@ -406,7 +429,7 @@
       <div class="when">2015 — 2016</div>
       <div class="what">
         <h3>Postdoctoral Researcher</h3>
-        <p class="org">University of Helsinki &amp; University of Turku</p>
+        <p class="org"><a href="https://www.helsinki.fi/en" rel="noopener">University of Helsinki</a> &amp; University of Turku</p>
         <p class="place">Finland</p>
         <p class="note">Computational and statistical methods on drug–target interaction networks for combination therapies in epithelial ovarian cancer.</p>
       </div>
@@ -415,7 +438,7 @@
       <div class="when">2010 — 2015</div>
       <div class="what">
         <h3>Doctoral Researcher</h3>
-        <p class="org">Åbo Akademi University — Department of Information Technologies</p>
+        <p class="org"><a href="https://www.abo.fi/en/" rel="noopener">Åbo Akademi University</a> — Department of Information Technologies</p>
         <p class="place">Turku, Finland</p>
         <p class="note">Formal methods for quantitative model refinement, specifying biomodels at multiple levels of resolution while preserving quantitative fit and validation.</p>
       </div>
@@ -430,7 +453,7 @@
       <div class="when">2024</div>
       <div class="what">
         <h3>Docent (Adjunct Professor), Computer Science</h3>
-        <p class="org">Åbo Akademi University — Faculty of Natural Sciences</p>
+        <p class="org"><a href="https://www.abo.fi/en/" rel="noopener">Åbo Akademi University</a> — Faculty of Natural Sciences</p>
         <p class="note">Field: Computational Modelling and Industrial Applications.</p>
       </div>
     </div>
@@ -438,7 +461,7 @@
       <div class="when">2015</div>
       <div class="what">
         <h3>PhD, Computer Science</h3>
-        <p class="org">Åbo Akademi University — Faculty of Natural Sciences</p>
+        <p class="org"><a href="https://www.abo.fi/en/" rel="noopener">Åbo Akademi University</a> — Faculty of Natural Sciences</p>
         <p class="note">Dissertation: <em>Quantitative Refinement of Reaction-Based Biomodels.</em></p>
       </div>
     </div>
@@ -446,7 +469,7 @@
       <div class="when">2009</div>
       <div class="what">
         <h3>Diploma Engineer, System and Computer Engineering</h3>
-        <p class="org">National University of Science and Technology POLITEHNICA Bucharest — Faculty of Automatic Control and Computers</p>
+        <p class="org"><a href="https://upb.ro/en/" rel="noopener">National University of Science and Technology POLITEHNICA Bucharest</a> — Faculty of Automatic Control and Computers</p>
         <p class="note">Thesis: <em>Computational Methods in Biology</em> (publicly defended).</p>
       </div>
     </div>
@@ -520,7 +543,7 @@
   <div class="prose" style="margin-bottom:1.6rem">
     <p>
       I began teaching over a decade ago as a teaching assistant and am now course-responsible
-      for several courses at Åbo Akademi University. In 2021 I created the university's first
+      for several courses at <a href="https://www.abo.fi/en/" rel="noopener">Åbo Akademi University</a>. In 2021 I created the university's first
       postgraduate course on Artificial Intelligence, and in 2024 produced a series of YouTube
       videos supporting the Data Science course.
     </p>
@@ -547,9 +570,9 @@
   <div class="block" style="margin-top:1.9rem">
     <h3>International teaching visits</h3>
     <ul>
-      <li><b>University of Würzburg</b>, Germany (2025) — quality assurance for the CHARM master's in Global Challenges for Sustainability.</li>
-      <li><b>Mälardalen University</b>, Sweden (2024–2025) — EDISS curriculum redesign and double-degree collaboration.</li>
-      <li><b>Utrecht University</b>, Netherlands (2024) — design thinking and challenge-based learning for applied data science.</li>
+      <li><b><a href="https://www.uni-wuerzburg.de/en/" rel="noopener">University of Würzburg</a></b>, Germany (2025) — quality assurance for the CHARM master's in Global Challenges for Sustainability.</li>
+      <li><b><a href="https://www.mdu.se/en/malardalen-university" rel="noopener">Mälardalen University</a></b>, Sweden (2024–2025) — EDISS curriculum redesign and double-degree collaboration.</li>
+      <li><b><a href="https://www.uu.nl/en" rel="noopener">Utrecht University</a></b>, Netherlands (2024) — design thinking and challenge-based learning for applied data science.</li>
     </ul>
   </div>
 </section>
@@ -609,30 +632,35 @@
 <section id="service" class="wrap">
   <div class="sec-head"><span class="sec-num">09</span><h2 class="sec-title">Service &amp; academic merits</h2></div>
   <div class="cols">
-    <div class="block">
-      <h3>Positions of trust</h3>
-      <ul>
-        <li><b>Selection Committee member</b>, Erasmus Mundus EDISS (2024–2025) — application review, selection and scholarship decisions.</li>
-        <li><b>Teacher tutor</b>, EDISS master's programme (2024–2025).</li>
-        <li><b>Mentor</b>, CHARM-EU Master in Global Challenges for Sustainability (2025–2026).</li>
-      </ul>
+    <div class="col-stack">
+      <div class="block">
+        <h3>Positions of trust</h3>
+        <ul>
+          <li><b>Selection Committee member</b>, <a href="https://www.master-ediss.eu/" rel="noopener">Erasmus Mundus EDISS Master's Program</a> (2024–2025) — application review, selection, and scholarship decisions.</li>
+          <li><b>Teacher tutor</b>, EDISS master's programme (2024–2025).</li>
+          <li><b>Mentor</b>, <a href="https://charm-eu.eu/learning/educational-offer/master-programme/" rel="noopener">CHARM-EU Master in Global Challenges for Sustainability</a> (2025–2026).</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h3>Invited talks</h3>
+        <ul>
+          <li><b>NTNU seminar</b>, Trondheim, Norway (2022).</li>
+          <li><b>MAST seminar</b>, Novia UAS, Turku, Finland (2022).</li>
+          <li><b>Workshop on Multi-Sensor Fusion for Autonomous Driving</b>, Indianapolis, USA (2021).</li>
+        </ul>
+      </div>
     </div>
-    <div class="block">
-      <h3>Invited talks</h3>
-      <ul>
-        <li><b>NTNU seminar</b>, Trondheim, Norway (2022).</li>
-        <li><b>MAST seminar</b>, Novia UAS, Turku, Finland (2022).</li>
-        <li><b>Workshop on Multi-Sensor Fusion for Autonomous Driving</b>, Indianapolis, USA (2021).</li>
-      </ul>
-    </div>
-    <div class="block">
-      <h3>Scientific &amp; societal impact</h3>
-      <ul>
-        <li>Member, <b>Finnish Artificial Intelligence Society</b> (2022–present).</li>
-        <li><b>Stanford WiDS Ambassador</b> — Women in Data Science (2024–2026).</li>
-        <li>Former member of <b>ReFund</b>, a departmental strategic team on funding for early-career researchers (2021–2022).</li>
-        <li>Former member, <b>Female IT Profile</b> team promoting equality in IT (2021–2022).</li>
-      </ul>
+    <div class="col-stack">
+      <div class="block">
+        <h3>Scientific &amp; societal impact</h3>
+        <ul>
+          <li><b>Educational outreach</b> — creator of a YouTube channel <a href="https://www.youtube.com/@iancu.bogdan" rel="noopener">@iancu.bogdan</a> communicating data science to students and lifelong learners.</li>
+          <li>Member, <b><a href="https://www.stes.fi/" rel="noopener">Finnish Artificial Intelligence Society</a></b> (2022–present).</li>
+          <li><b>Stanford WiDS Ambassador</b> — Women in Data Science (2024–2026).</li>
+          <li>Former member of <b>ReFund</b>, a departmental strategic team on funding for early-career researchers (2021–2022).</li>
+          <li>Former member, <b>Female IT Profile</b> team promoting equality in IT (2021–2022).</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
